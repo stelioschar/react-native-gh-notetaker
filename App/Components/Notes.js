@@ -44,7 +44,7 @@ var styles = StyleSheet.create({
     flexDirection: 'row'
   }
 });
-
+// In the video there are a couple errors, fixed them so it would build.
 class Notes extends React.Component{
   constructor(props){
     super(props);
