@@ -1,6 +1,6 @@
 var React = require('react-native');
 var Badge = require('./Badge');
-var Seperator = require('./Helpers/Seperator');
+var Separator = require('./Helpers/Separator');
 
 var {
   Text,
