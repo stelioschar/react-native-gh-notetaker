@@ -26,7 +26,7 @@ render(){
   return (
       <View style={styles.container}>
         <Text> This is the dashboard </Text>
-        <Text> {this.props.userInfo} </Text>
+        <Text> {JSON.stringify(this.props.userInfo)} </Text>
       </View>
     )
 }
