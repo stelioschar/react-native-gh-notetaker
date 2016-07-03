@@ -1,13 +1,17 @@
-var React = require('react-native');
-
-var {
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ */
+'use strict';
+import React, {
   AppRegistry,
+  Component,
   StyleSheet,
   Text,
-  View,
-} = React;
+  View
+} from 'react-native';
 
-class githubNotetaker extends React.Component{
+class githubNotetaker extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -19,14 +23,14 @@ class githubNotetaker extends React.Component{
         </Text>
         <Text style={styles.instructions}>
           Press Cmd+R to reload,{'\n'}
-          Cmd+Control+Z for dev menu
+          Cmd+D or shake for dev menu
         </Text>
       </View>
     );
   }
-};
+}
 
-var styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
