@@ -11,12 +11,12 @@ var api = {
     },
     getNotes(username){
         username = username.toLowerCase().trim();
-        var url = `https://native-gh-notetaker.firebaseio.com/${username}.json`;
+        var url = `https://react-native-github-notes.firebaseio.com/${username}.json`;
         return fetch(url).then((res) => res.json())
     },
     addNote(username, note){
         username = username.toLowerCase().trim();
-        var url = `https://native-gh-notetaker.firebaseio.com/${username}.json`;
+        var url = `https://react-native-github-notes.firebaseio.com/${username}.json`;
         return fetch(url, {
             method: 'post',
             body: JSON.stringify(note)
